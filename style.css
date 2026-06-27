@@ -295,6 +295,10 @@ a.hbn-link[href="#experience"]:hover { color: #eaeaea; }
 }
 
 @media(max-width:768px){
+  /* Disable custom cursor on touch devices */
+  .cursor, .cursor-ring { display: none !important; }
+  body { cursor: auto; }
+
   /* Hero fixes for mobile */
   .hi-text{top:20%;left:5%;font-size:clamp(3rem,10vw,4rem)}
   .name-block{flex-direction:column;align-items:center;bottom:35%;transform:none;width:100%;left:0}
@@ -303,16 +307,21 @@ a.hbn-link[href="#experience"]:hover { color: #eaeaea; }
   .hero-bottom-nav{flex-wrap:wrap;gap:1.5rem;padding:1rem;justify-content:center}
   
   /* General Sections */
+  .wrap{padding:0 1.5rem}
   .section{padding:5rem 0}
   .about-grid{grid-template-columns:1fr;gap:3rem}
   .about-facts{grid-template-columns:1fr}
   .contact-grid{grid-template-columns:1fr;gap:3rem}
   .form-row{grid-template-columns:1fr}
-  .project-row{grid-template-columns:1fr;gap:1rem}
+  
+  /* Project & Experience Fixes for smaller screens */
+  .project-row{grid-template-columns:1fr;gap:1rem;padding:1.5rem 1rem;margin:0}
   .proj-num{display:none}
+  .exp-item{padding:0 0 2.5rem 1.5rem}
+  
   .footer-inner{flex-direction:column;gap:2rem}
   .footer-bottom{flex-direction:column;gap:.5rem}
-  .sec-title{font-size:2.5rem}
+  .sec-title{font-size:2.2rem}
 }
 
 @media(max-width:480px){
