@@ -58,11 +58,8 @@ function animCount(el) {
 }
 
 // ── CV BUTTON ────────────────────────────────────────
-const cvBtn = document.getElementById('cvBtn');
-if (cvBtn) cvBtn.addEventListener('click', e => {
-  e.preventDefault();
-  alert('CV will be available for download soon!');
-});
+// CV download is now handled directly by the HTML download attribute
+
 
 // ── CONTACT FORM ─────────────────────────────────────
 const contactForm = document.getElementById('contactForm');
